@@ -9,7 +9,6 @@ class NngppConan(ConanFile):
     license = "MIT"
     url = "https://git.artin.cz/jan.bartusek/conan-nngpp"
     description = "nngpp conan receipe with nng roboauto dependency"
-    requires = "nng/1.1.1@roboauto/stable"
 
     def source(self):
         self.run("git clone https://github.com/cwzx/nngpp.git " + self.source_subfolder)
